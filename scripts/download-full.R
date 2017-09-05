@@ -5,6 +5,7 @@
 #   that are required in local repo
 
 
+# setwd('c:/home/git/Other/miktex-repo/')
 url <- 'http://mirror.unl.edu/ctan/systems/win32/miktex/tm/packages/'
 
 f <- c(
