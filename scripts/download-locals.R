@@ -6,7 +6,8 @@
 
 
 # setwd('c:/home/git/Other/miktex-repo/')
-url <- 'http://mirror.unl.edu/ctan/systems/win32/miktex/tm/packages/'
+# url <- 'http://mirror.unl.edu/ctan/systems/win32/miktex/tm/packages/'
+url <- 'http://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/'
         
 
 
