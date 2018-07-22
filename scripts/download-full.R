@@ -7,7 +7,8 @@
 
 # setwd('c:/home/git/Other/miktex-repo/')
 # url <- 'http://mirror.unl.edu/ctan/systems/win32/miktex/tm/packages/'
-url <- 'http://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/'
+# url <- 'http://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/'
+url <- 'http://dante.ctan.org/tex-archive/systems/win32/miktex/tm/packages/'
 
 
 f <- c(
@@ -20,21 +21,24 @@ f <- c(
 file <- 'README.TXT'
 download.file(
   url = paste0(url, file), 
-  destfile = paste0('./repo-local/', file)
+  destfile = paste0('./repo-local/', file),
+  mode = 'wb'
 )
 
 
 file <- 'miktex-zzdb1-2.9.tar.lzma'
 download.file(
   url = paste0(url, file), 
-  destfile = paste0('./repo-local/', file)
+  destfile = paste0('./repo-local/', file),
+  mode = 'wb'
 )
 
 
 file <- 'miktex-zzdb2-2.9.tar.lzma'
 download.file(
   url = paste0(url, file), 
-  destfile = paste0('./repo-local/', file)
+  destfile = paste0('./repo-local/', file),
+  mode = 'wb'
 )
 
 

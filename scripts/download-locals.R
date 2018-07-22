@@ -7,7 +7,8 @@
 
 # setwd('c:/home/git/Other/miktex-repo/')
 # url <- 'http://mirror.unl.edu/ctan/systems/win32/miktex/tm/packages/'
-url <- 'http://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/'
+# url <- 'http://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/'
+url <- 'http://dante.ctan.org/tex-archive/systems/win32/miktex/tm/packages/'
         
 
 
@@ -17,7 +18,8 @@ for (l in locals) {
   # print(paste0(url, l))
   download.file(
     url = paste0(url, l), 
-    destfile = paste0('./repo-local/', l)
+    destfile = paste0('./repo-local/', l),
+    mode = 'wb'
   )
 }
 
